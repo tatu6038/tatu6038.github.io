@@ -1,0 +1,7 @@
+<body id=B onMouseMove=y=event.y;x=event.x><script>h=B.clientHeight-20;a=[b=[q= 
+[D=document]]];for(U=x=99;x--;C=F=q[x]=P=y=0)D.write("<b style=background:red;" 
++"width=16;height=16;position:absolute;top:-20></b>");function T(){for(i=C;i--* 
+!F;J=D.all(5+i).style,l=q[i]/U,m=J.left=a[i]*(c=1-l)+a[d=i+U]*l,n=J.top=b[i]*c+ 
+b[d]*l,F=m-15<x&x<m+16&n-15<y&y<n+16)if(!q[s=i]--)for(j=2;j--;s+=R%3+1)R=Math. 
+random(q[i]=U)*w*h|0,a[c=j?i:i+U]=s%2?s%4>1?0:w:R%w,b[c]=s%2?R%h:s%4?h:0;P++-C* 
+9||C-U&&C++;if(F)alert(P);else setTimeout(T,U-C)}T(w=B.clientWidth-20)</script>
