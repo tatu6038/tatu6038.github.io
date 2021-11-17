@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>
+            たいとる
+        </title>
+        <script type="text/javascript" src="swf2js-master/swf2js.js">
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            swf2js.load("./eva_counts/ファイル名");
+        </script>
+    </body>
+</html>
