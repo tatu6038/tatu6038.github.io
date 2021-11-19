@@ -1,7 +1,7 @@
 .placement > div {
   border-radius: 5px; /* 角の丸まり */
-  background: rgb(207,232,220); /* 背景色 */
-  border: 2px solid rgb(79,185,227); /* 線の色 */
+  background: rgb(233,230,47); /* 背景色 */
+  border: 2px solid rgb(0,255,0); /* 線の色 */
   padding: 1em; /* ラインから表示までの幅 */
 }
 .placement {
