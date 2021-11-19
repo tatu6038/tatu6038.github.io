@@ -1,0 +1,25 @@
+.placement > div {
+  border-radius: 5px; /* 角の丸まり */
+  background: rgb(207,232,220); /* 背景色 */
+  border: 2px solid rgb(79,185,227); /* 線の色 */
+  padding: 1em; /* ラインから表示までの幅 */
+}
+.placement {
+    display: grid; 
+    grid-template-columns: 2fr 3fr 2fr; /* 比 */
+  grid-template-rows: 100px 100px; /* 100pxの2行 */
+  grid-gap: 10px; /* ラインの外の空間 */
+  margin-bottom: 20px; /* ライン端から表示場所までの幅 */
+}
+.left {
+  grid-row: 1 / 10 ; /* 縦 */
+  grid-column: 1 / 2; /* 横 */
+}
+.middle {
+  grid-row: 1 / 10 ; /* 縦 */
+  grid-column: 3 / 5; /* 横 */
+}
+.right {
+  grid-row: 1 / 10 ; /* 縦 */
+  grid-column: 7 / 8 ; /* 横 */
+}
