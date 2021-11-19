@@ -23,3 +23,9 @@
   grid-row: 1 / 10 ; /* 縦 */
   grid-column: 7 / 8 ; /* 横 */
 }
+.header {
+  background: rgb(234,235,219); /* 背景色 */
+  padding: 5px ; /* ラインから表示までの幅 */
+  text-align: center;
+  top: 0px;
+}
