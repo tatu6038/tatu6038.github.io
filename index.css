@@ -12,15 +12,15 @@
 }
 .left {
   grid-row: 1 / 10 ; /* 縦 */
-  grid-column: 1 / 3 ; /* 横 */
+  grid-column: 0 / 2 ; /* 横 */
 }
 .middle {
   grid-row: 1 / 10 ; /* 縦 */
-  grid-column: 3 / 6 ; /* 横 */
+  grid-column: 2 / 5 ; /* 横 */
 }
 .right {
   grid-row: 1 / 10 ; /* 縦 */
-  grid-column: 6 / 8 ; /* 横 */
+  grid-column: 5 / 7 ; /* 横 */
 }
 .header {
   background: rgb(234,235,219); /* 背景色 */
