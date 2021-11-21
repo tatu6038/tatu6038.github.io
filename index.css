@@ -29,3 +29,7 @@
   text-align: center;
   top: 0px;
 }
+.big {
+  font-size:16px; /* フォントサイズ */
+  line-height:200%; /* 行間の幅 */
+}
