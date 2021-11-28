@@ -28,7 +28,11 @@
   text-align: center;
   top: 0px;
 }
-.normal {
+.normal > div {
   font-size:16px; /* フォントサイズ */
   line-height:200%; /* 行間の幅 */
+}
+.index-body {
+  text-align:center;
+  padding:5px 30px;
 }
