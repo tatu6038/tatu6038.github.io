@@ -33,6 +33,6 @@
   line-height:200%; /* 行間の幅 */
 }
 .index-body {
-  text-align:center;
+  text-align:left;
   padding:10px 0px 5px 0px;
 }
