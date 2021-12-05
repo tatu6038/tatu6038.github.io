@@ -46,4 +46,6 @@ ul.links li{
   list-style: square;
   justify-content: flex-start;
   margin: 20px;
+  width: auto;
+  height: auto;
 }
