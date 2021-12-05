@@ -38,12 +38,12 @@
   margin-right: 10px;
   margin-left: 10px;
 }
-ul.links li{
+.links{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   padding: 0;
   list-style: square;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   margin: 20px;
 }
