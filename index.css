@@ -38,14 +38,18 @@
   margin-right: 10px;
   margin-left: 10px;
 }
-ul.links li{
+ul.links li {
+  padding: 0;
+  margin: 20px;
+  width: auto;
+  height: auto;
+}
+ul.links {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  padding: 0;
   list-style: square;
   justify-content: flex-start;
-  margin: 20px;
   width: auto;
   height: auto;
 }
