@@ -38,13 +38,12 @@
   margin-right: 10px;
   margin-left: 10px;
 }
-.links {
+ul.links li{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   padding: 0;
   list-style: square;
-  margin-right: 5px;
-  margin-left: 5px;
   justify-content: space-evenly;
+  margin: 20px;
 }
