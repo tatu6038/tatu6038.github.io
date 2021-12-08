@@ -28,11 +28,9 @@
   text-align: center;
   top: 0px;
 }
-.normal > div {
+.body {
   font-size:16px; /* フォントサイズ */
   line-height:200%; /* 行間の幅 */
-}
-.index-body {
   text-align:left;
   padding:5px 0px 5px 0px;
   margin-right: 10px;
@@ -53,6 +51,6 @@ ul.links {
   width: auto;
   height: auto;
 }
-body {
+.font {
   font-family: ニコモジ＋, Hiragino Maru Gothic Pro W6, Hiragino Sans, Meiryo UI, Meiryo;
 }
