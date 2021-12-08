@@ -21,8 +21,4 @@
  <dt>か行</dt>
  <dd>かきくけこ</dd>
 </dl>
-<www.tatu6038.tk>
-<https://www.tatu6038.tk>
-*イタリック*
-**Bold**
-***イタリック&Bold***
+![サイトアイコン](https://www.tatu6038.tk/headline "画像")
