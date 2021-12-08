@@ -68,9 +68,9 @@ hoge
 
 [新しいサイトURL](https://www.tatu6038.tk "www.tatu6038.tk")
 
-![サイトアイコン](./headline)
+![サイトアイコン](./headline.png)
 
-![サイトアイコン](https://tatu6038.github.io/headline "アイコン画像")
+![サイトアイコン](https://tatu6038.github.io/headline.png "アイコン画像")
 
 * リスト1(黒丸)注意: 書き込み内容の前に空白を入れる
   * リスト1-2(白丸)
