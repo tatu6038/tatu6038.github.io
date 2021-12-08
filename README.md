@@ -21,7 +21,6 @@
  <dt>か行</dt>
  <dd>かきくけこ</dd>
 </dl>
-<自動リンク>
 <www.tatu6038.tk>
 <https://www.tatu6038.tk>
 *イタリック*
