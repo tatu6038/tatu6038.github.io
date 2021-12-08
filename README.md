@@ -21,8 +21,9 @@
  <dt>か行</dt>
  <dd>かきくけこ</dd>
 </dl>
-[元のURL(まだ使える)](https://tatu6038.github.io "tatu6038.github.io") 注意: 名前は指定しなくてもよい
-[新しいURL](https://www.tatu6038.tk "www.tatu6038.tk")
+<自動リンク>
+<www.tatu6038.tk>
+<https://www.tatu6038.tk>
 *イタリック*
 **Bold**
 ***イタリック&Bold***
