@@ -72,8 +72,16 @@ ul.links {
   justify-content: flex-start;
   width: auto;
   height: auto;
-iframe {
+iframe.links {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style: square;
+  justify-content: flex-start;
   border: none;
   width: auto;
   height: auto;
+  padding:5px 0px 5px 0px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
