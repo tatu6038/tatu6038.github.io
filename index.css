@@ -74,11 +74,6 @@ ul.links {
   height: auto;
 }
 iframe.links {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  list-style: square;
-  justify-content: flex-start;
   overflow: hidden;
   border: none;
   width: auto;
