@@ -78,6 +78,7 @@ iframe.links {
   flex-direction: row;
   list-style: square;
   justify-content: flex-start;
+  overflow-y: hidden;
   border: none;
   width: auto;
   height: auto;
