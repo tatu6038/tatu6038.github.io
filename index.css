@@ -1,3 +1,7 @@
+/*
+To You I Loved
+I'm sorry 
+*/
 .placement > div {
   border-radius: 5px; /* 角の丸まり */
   background: rgb(248,255,117); /* 背景色 */
@@ -28,8 +32,9 @@
   text-align: center;
   top: 0px;
 }
-.body {
+body {
   font-family: ニコモジ＋, Hiragino Maru Gothic Pro W6, Hiragino Sans, Meiryo UI, Meiryo;
+.body {
   font-size:16px; /* フォントサイズ */
   line-height:200%; /* 行間の幅 */
   text-align:left;
