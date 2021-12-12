@@ -48,13 +48,17 @@ For these reasons, all I can do that is keep worrying:_(
   top: 0px;
 }
 body {
-  font-family: ニコモジ＋, Hiragino Maru Gothic Pro W6, Hiragino Sans, Meiryo UI, Meiryo;
+  font-family: nicomoji-plus, Hiragino Maru Gothic Pro W6, Hiragino Sans, Meiryo UI, Meiryo;
+}
+@font-face {
+   font-family: 'nicomoji-plus';
+   src: url('/fonts/nicomoji-plus.ttf');
 }
 .body {
-  font-size:16px; /* フォントサイズ */
-  line-height:200%; /* 行間の幅 */
-  text-align:left;
-  padding:5px 0px 5px 0px;
+  font-size: 16px; /* フォントサイズ */
+  line-height: 200%; /* 行間の幅 */
+  text-align: left;
+  padding: 5px 0px 5px 0px;
   margin-right: 10px;
   margin-left: 10px;
 }
