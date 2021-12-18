@@ -6,42 +6,42 @@ I wish I was brave to apologize to you for that…
 Let me explain that what did I do.
 First, I loved you purely.
 But, I forget that I had heard a little about you and him dating at that time that I told that I liked you.
-Second, + At least, I think that you are almost perfectly capable of doing all of things.
+Second, + I think that you are almost perfectly capable of doing all of things.
 But, I can only assume that I'm a flaw.
 So, I thought that we aren't balance and I thought that I can't be for you.
 Third,I have no room in my heart.
 Then you shouldn't have said you liked me.
-I know you think so…
+I know you thought so…
 Now, I want to get back together again.
 But, I know that there isn't convenient because I know that you have your reasons.
 In reality, I am sad to know, you will never read this sentence…
 For these reasons, all I can do that is keep worrying:_(
 */
-.placement > div {
+div.placement > div {
   border-radius: 5px; /* 角の丸まり */
   background: rgb(248,255,117); /* 背景色 */
   border: 2px solid rgb(0,255,0); /* 線の色 */
   padding: 1em; /* ラインから表示までの幅 */
 }
-.placement {
+div.placement {
   display: grid; 
   grid-template-columns: 2 3 2; /* 分割 */
   grid-gap: 10px; /* ラインの外の空間 */
   margin-bottom: 20px; /* ライン端から表示場所までの幅 */
 }
-.left {
+div.left {
   grid-row: 1 / 10 ; /* 縦 */
   grid-column: 1 / 3 ; /* 横 */
 }
-.middle {
+div.middle {
   grid-row: 1 / 10 ; /* 縦 */
   grid-column: 3 / 6 ; /* 横 */
 }
-.right {
+div.right {
   grid-row: 1 / 10 ; /* 縦 */
   grid-column: 6 / 8 ; /* 横 */
 }
-.header {
+div.header {
   background: rgb(234,235,219); /* 背景色 */
   padding: 5px ; /* ラインから表示までの幅 */
   text-align: center;
@@ -54,7 +54,7 @@ body {
    font-family: 'nicomoji-plus';
    src: url('/fonts/nicomoji-plus.ttf');
 }
-.body {
+div.body {
   font-size: 16px; /* フォントサイズ */
   line-height: 200%; /* 行間の幅 */
   text-align: left;
@@ -77,13 +77,10 @@ ul.links {
   width: auto;
   height: auto;
 }
-iframe.links {
+iframe#iframe {
   overflow: hidden;
   border: none;
   width: 100%;
-  /* padding: 5px 0px 5px 0px;
-  margin-right: 10px;
-  margin-left: 10px; */
   margin: 0px;
   padding: 0px;
 }
