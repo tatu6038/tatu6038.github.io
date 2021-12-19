@@ -81,7 +81,7 @@ ul.links {
   width: auto;
   height: auto;
 }
-#iframe {
+.iframe {
   overflow: hidden;
   border: none;
   width: 100%;
