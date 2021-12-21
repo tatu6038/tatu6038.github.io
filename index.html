@@ -5,7 +5,6 @@
 		<link rel="stylesheet" href="/index.css">
 		<title>人間を辞めてゆるかわ系動物になりたいtatu#6038</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
-		<script type="text/javascript" src="/elements/iframe-links_auto-size.js"></script>
 	</head>
 	<body>
 		<div class="font">
@@ -27,6 +26,15 @@
 			</div>
 			<div class="footer">
 				<iframe class="iframe" src="/elements/links.html" scrolling="no" id="links" onload="funclinks()"></iframe>
+				<script>
+					const links = document.getElementById("links");
+					function funclinks()
+				{
+					links.style.width = links.contentWindow.document.body.scrollWidth + "px";
+					links.style.height = links.contentWindow.document.body.scrollHeight + "px";
+				}
+			</script>
+				
 				<p>
 					<span style="font-size:80%;">© 2021 tatu6038.github.io All rights reserved.</span>
 				</p>
