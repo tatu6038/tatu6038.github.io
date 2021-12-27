@@ -68,3 +68,7 @@ jobs:
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
+      
+      #----------
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v2.5.0
