@@ -34,6 +34,34 @@
 |内容|Windows10(64bit)|クソスぺ|3年DC|出すわけねーだろKS|
 |備考|-|ダルいから書きたくない|し っ て た|し っ て た|
 ---  
+### **要素(自分用)**
+#### **大きさ自動調整**
+
+javascript
+
+```js
+const 割り当て = document.getElementById("割り当て");
+function func割り当て()
+{
+  割り当て.style.width = 割り当て.contentWindow.document.body.scrollWidth + "px";
+  割り当て.style.height = 割り当て.contentWindow.document.body.scrollHeight + "px";
+}
+```
+
+scriptタグ側
+
+```html
+<script type="text/javascript" src="/elements/iframe-割り当て_auto-size.js" async></script>
+```
+
+iframeタグ側
+
+```html
+<iframe class="iframe" src="/elements/割り当て.html" scrolling="no" id="割り当て" onload="func割り当て()"></iframe>
+```
+
+---  
+
 # マークダウン用例  
 
 > 引用  
