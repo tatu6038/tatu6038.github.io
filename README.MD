@@ -2,6 +2,15 @@
 ## **まず**  
 基本ブログとか書いていく感じだからここに書く内容マジで無い  
 まぁせっかくだからなんか書く  
+### **直でURL入力しないでほしい話(短縮URL)**[^気づいたこと１]
+[^気づいたこと１]:ブックマークバーにドラッグアンドドロップでok[^気づいたこと２]
+[^気づいたこと２]:それなら変える必要なかったくね？[^気づいたこと３]
+[^気づいたこと３]:なんとアクセス回数が見れるらしい[^気づいたこと４]
+[^気づいたこと４]:ファッ！？[^気づいたこと５]
+[^気づいたこと５]:だからアクセス数増やしてやんねーよwとかいうアンチは来ないでくださーいw[^気づいたこと６]
+[^気づいたこと６]:開発中に自分のアクセスで増えないように自分だけは元URL使いまーす
+
+* [これ](https://bit.ly/tatu6038)  
 ### **このサイトに関して**  
 #### **とりあえず**
 1. サイトのホームにもあるけど、ただ好きなようにするだけのサイトだから、サイトの内容自体の文句とかは困るからそこは把握してね
@@ -28,46 +37,32 @@
 * ある程度`HTML`、`CSS`、`Javascript`に詳しい ニキ/ネキ であれば用例や、開発者モードでデバッグして見つけた 問題/改善点 を教えていただければ嬉しいです！  
 * 隠しメッセージ、隠し要素もあるのでぜひ探してください！(その際は開発者モードは使わないでくださいね(できれば))  
 ---  
-## **環境**
+## **環境**  
 |＼|OS|スペック|年齢|名前|
 |:---:|:---|:---|:---|:---|
 |内容|Windows10(64bit)|クソスぺ|3年DC|出すわけねーだろKS|
 |備考|-|ダルいから書きたくない|し っ て た|し っ て た|
 ---  
-## **要素(自分用)**
-### **大きさ自動調整**
-
-javascript
-
-```js
-const 割り当て = document.getElementById("割り当て");
-function func割り当て()
-{
-  割り当て.style.width = 割り当て.contentWindow.document.body.scrollWidth + "px";
-  割り当て.style.height = 割り当て.contentWindow.document.body.scrollHeight + "px";
-}
-```
-
-scriptタグ側
-
-```html
-<script type="text/javascript" src="/elements/iframe-割り当て_auto-size.js" async></script>
-```
-
-iframeタグ側
-
-```html
-<iframe class="iframe" src="/elements/割り当て.html" scrolling="no" id="割り当て" onload="func割り当て()"></iframe>
-```
-
+## **要素(自分用)**  
+### **大きさ自動調整**  
+javascript  
+```js  
+const 割り当て = document.getElementById("割り当て");  
+function func割り当て()  
+{  
+  割り当て.style.width = 割り当て.contentWindow.document.body.scrollWidth + "px";  
+  割り当て.style.height = 割り当て.contentWindow.document.body.scrollHeight + "px";  
+}  
+```  
+scriptタグ側  
+```html  
+<script type="text/javascript" src="/elements/iframe-割り当て_auto-size.js" async></script>  
+```  
+iframeタグ側  
+```html  
+<iframe class="iframe" src="/elements/割り当て.html" scrolling="no" id="割り当て" onload="func割り当て()"></iframe>  
+```  
 ---  
-
-## **なんかURL短縮ってのあったからそれ**[^気づいたこと１]
-[^気づいたこと１]:ブックマークバーにドラッグアンドドロップでok[^気づいたこと２]
-[^気づいたこと２]:それなら変える必要なかったくね？
-
-* [１つめ](https://)
-
 ## マークダウン用例  
 
 > 引用  
