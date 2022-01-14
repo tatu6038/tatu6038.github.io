@@ -41,7 +41,7 @@ div.right {
   grid-row: 1 / 10 ; /* 縦 */
   grid-column: 6 / 8 ; /* 横 */
 }
-div.header {
+header {
   background: rgb(234,235,219); /* 背景色 */
   padding: 5px ; /* ラインから表示までの幅 */
   text-align: center;
@@ -53,8 +53,6 @@ body {
 @font-face {
    font-family: 'nicomoji-plus';
    src: url('/fonts/nicomoji-plus.ttf');
-}
-div.header {
 }
 div.body {
   font-size: 100%; /* フォントサイズ */
