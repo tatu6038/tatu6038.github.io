@@ -46,6 +46,31 @@
 |備考|-|ダルいから書きたくない|し っ て た|し っ て た|
 ---  
 ## **要素(自分用)**  
+### **header/footer  
+header  
+```html
+<header class="header">
+ <a href="./index">
+  <img src="./images/siteicon.png" alt="tatu6038.github.io">
+ </a>
+</header>
+```
+footer
+```html
+<footer>
+ <ul class="links">
+  <li>
+   <a href="/blogs" target="_blank">ブログ(準備中)</a>
+  </li>
+  <li>
+   <a href="/articles" target="_blank">記事(試作)</a>
+  </li>
+  <li>
+   <a href="/history" target="_blank">更新履歴</a>
+  </li>
+ </ul>
+</footer>
+```
 ### **`iframe`大きさ自動調整**  
 javascript  
 ```js  
