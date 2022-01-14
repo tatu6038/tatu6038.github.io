@@ -69,6 +69,9 @@ footer
    <a href="/history" target="_blank">更新履歴</a>
   </li>
  </ul>
+ <p>
+  <span style="font-size:80%;">© 2021 tatu6038.github.io All rights reserved.</span>
+ </p>
 </footer>
 ```
 ### **`iframe`大きさ自動調整**  
