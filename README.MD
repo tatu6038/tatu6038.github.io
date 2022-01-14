@@ -46,7 +46,7 @@
 |備考|-|ダルいから書きたくない|し っ て た|し っ て た|
 ---  
 ## **要素(自分用)**  
-### **大きさ自動調整**  
+### **`iframe`大きさ自動調整**  
 javascript  
 ```js  
 const 割り当て = document.getElementById("割り当て");  
@@ -63,7 +63,9 @@ scriptタグ側
 iframeタグ側  
 ```html  
 <iframe class="iframe" src="/elements/割り当て.html" scrolling="no" id="割り当て" onload="func割り当て()"></iframe>  
-```  
+```
+
+
 ---  
 ## マークダウン用例  
 
