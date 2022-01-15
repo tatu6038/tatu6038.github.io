@@ -46,7 +46,22 @@
 |備考|-|ダルいから書きたくない|し っ て た|し っ て た|
 ---  
 ## **要素(自分用)**  
-### **header/footer  
+### **OGP関連**  
+```html  
+<html prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# website: https://ogp.me/ns/website#">
+```  
+```html  
+<meta name="robots" content="max-image-preview:large" />
+<meta property="og:url" content="ページのURL(URL)url" />
+<!-- トップならwebsite、それ以外はarticle -->
+<meta property="og:type" content="website" />
+<!-- titleの指定は任意 -->
+<meta property="og:title" content="ページのタイトル(非URL)title" />
+<meta property="og:site_name" content="サイトのブランド名(非URL)site_name" />
+<meta property="og:image" content="埋め込み画像のパス(URL)" />
+<meta property="og:description" content="説明文description" />
+```
+### **header/footer**  
 header  
 ```html
 <header class="header">
