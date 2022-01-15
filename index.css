@@ -41,18 +41,18 @@ div.right {
   grid-row: 1 / 10 ; /* 縦 */
   grid-column: 6 / 8 ; /* 横 */
 }
-header {
-  background: rgb(234,235,219); /* 背景色 */
-  padding: 5px ; /* ラインから表示までの幅 */
-  text-align: center;
-  top: 0px;
-}
 body {
   font-family: nicomoji-plus, Hiragino Maru Gothic Pro W6, Hiragino Sans, Meiryo UI, Meiryo;
 }
 @font-face {
    font-family: 'nicomoji-plus';
-   src: url('/fonts/nicomoji-plus.ttf');
+   src: url('/Fonts/nicomoji-plus.ttf');
+}
+header{
+  background: rgb(234,235,219); /* 背景色 */
+  padding: 5px ; /* ラインから表示までの幅 */
+  text-align: center;
+  top: 0px;
 }
 div.body {
   font-size: 100%; /* フォントサイズ */
@@ -62,7 +62,8 @@ div.body {
   margin-right: 10px;
   margin-left: 10px;
 }
-div.footer {
+footer {
+  
 }
 ul.links li {
   padding: 0;
