@@ -50,8 +50,8 @@
 header  
 ```html
 <header class="header">
- <a href="./index">
-  <img src="./images/siteicon.png" alt="tatu6038.github.io">
+ <a href="/index">
+  <img src="/images/headlineicon.png" alt="tatu6038.github.io">
  </a>
 </header>
 ```
