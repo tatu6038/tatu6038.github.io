@@ -44,6 +44,7 @@ div.right {
 }
 body {
   font-family: nicomoji-plus, Hiragino Maru Gothic Pro W6, Hiragino Sans, Meiryo UI, Meiryo;
+  margin: 0px;
 }
 @font-face {
    font-family: 'nicomoji-plus';
