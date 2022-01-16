@@ -63,15 +63,15 @@
 ```
 ### **header/footer**  
 header  
-```html
+```html  
 <header class="header">
  <a href="/index">
   <img src="/images/headlineicon.png" alt="tatu6038.github.io">
  </a>
 </header>
-```
+```  
 footer
-```html
+```html  
 <footer>
  <ul class="links">
   <li>
@@ -79,6 +79,9 @@ footer
   </li>
   <li>
    <a href="/articles" target="_blank">記事(試作)</a>
+  <li>
+   <a href="/tools" target="_blank">ゲーム・ツール等(試作)</a>
+  </li>
   </li>
   <li>
    <a href="/history" target="_blank">更新履歴</a>
@@ -88,7 +91,7 @@ footer
   <span style="font-size:80%;">© 2021 tatu6038.github.io All rights reserved.</span>
  </p>
 </footer>
-```
+```  
 ### **`iframe`大きさ自動調整**  
 javascript  
 ```js  
