@@ -91,48 +91,51 @@
 ```  
 #### **header**  
 ```html  
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2GNJJS" height="0" width="0" style="display:none;visibility:hidden">
-	</iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
-<header class="header">
-	<a href="/index">
-		<img src="/images/headlineicon.png" alt="tatu6038.github.io">
-	</a>
-	<div class="search-box">
-		<!-- Search Box -->
-		<script async src="https://cse.google.com/cse.js?cx=6f76b0932a6b7ea3e"></script>
-		<div class="gcse-searchbox-only"></div>
-		<!-- End Search Box -->
-	</div>
-</header>
+	<head>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2GNJJS" height="0" width="0" style="display:none;visibility:hidden">
+			</iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<header class="header">
+			<a href="/index">
+				<img src="/images/headlineicon.png" alt="tatu6038.github.io">
+			</a>
+			<div class="search-box">
+				<!-- Search Box -->
+				<script async src="https://cse.google.com/cse.js?cx=6f76b0932a6b7ea3e"></script>
+				<div class="gcse-searchbox-only"></div>
+				<!-- End Search Box -->
+			</div>
+		</header>
 ```  
 #### **footer**
 ```html  
-<footer>
-	 <ul class="links">
-		<li>
-			<a href="/profile" target="_blank">持ち垢とか</a>
-		</li>
-		<li>
-			<a href="/blogs" target="_blank">ブログ(準備中)</a>
-		</li>
-		<li>
-			<a href="/articles" target="_blank">記事(試作)</a>
-		</li>
-		<li>
-			<a href="/tools" target="_blank">ゲーム・ツール等(試作)</a>
-		</li>
-		<li>
-			<a href="/history" target="_blank">更新履歴</a>
-		</li>
-	</ul>
-	<p>
-		<span style="font-size:80%;">© 2021 tatu6038.github.io All rights reserved.</span>
-	</p>
-</footer>
+		<footer>
+			<ul class="links">
+				<li>
+					<a href="/profile" target="_blank">持ち垢とか</a>
+				</li>
+				<li>
+					<a href="/blogs" target="_blank">ブログ(準備中)</a>
+				</li>
+				<li>
+					<a href="/articles" target="_blank">記事(試作)</a>
+				</li>
+				<li>
+					<a href="/tools" target="_blank">ゲーム・ツール等(試作)</a>
+				</li>
+				<li>
+					<a href="/history" target="_blank">更新履歴</a>
+				</li>
+			</ul>
+			<p>
+				<span style="font-size:80%;">© 2021 tatu6038.github.io All rights reserved.</span>
+			</p>
+		</footer>
+	</body>
+</html>
 ```  
 ### **`iframe`大きさ自動調整**  
 javascript  
