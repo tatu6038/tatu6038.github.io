@@ -101,10 +101,12 @@
 	<a href="/index">
 		<img src="/images/headlineicon.png" alt="tatu6038.github.io">
 	</a>
-	<!-- Search Box -->
-	<script async src="https://cse.google.com/cse.js?cx=6f76b0932a6b7ea3e"></script>
-	<div class="gcse-searchbox-only"></div>
-	<!-- End Search Box -->
+	<div class="search-box">
+		<!-- Search Box -->
+		<script async src="https://cse.google.com/cse.js?cx=6f76b0932a6b7ea3e"></script>
+		<div class="gcse-searchbox-only"></div>
+		<!-- End Search Box -->
+	</div>
 </header>
 ```  
 #### **footer**
