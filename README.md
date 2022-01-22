@@ -46,10 +46,14 @@
 |備考|-|ダルいから書きたくない|し っ て た|し っ て た|
 ---  
 ## **要素(自分用)**  
-### **OGP関連**  
+### **基礎要素**  
+#### **html**
 ```html  
+<!-- トップならwebsite、それ以外はarticle -->
 <html prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# website: https://ogp.me/ns/website#">
 ```  
+#### **head**
+##### **OGP関連**
 ```html  
 <meta name="robots" content="max-image-preview:large" />
 <meta property="og:url" content="ページのURL(URL)url" />
@@ -61,8 +65,14 @@
 <meta property="og:image" content="埋め込み画像のパス(URL)" />
 <meta property="og:description" content="説明文description" />
 ```
-### **header/footer**  
-header  
+##### **一般**
+```html  
+<link rel="icon" type="image/png" href="/Images/favicon.png" />
+<link rel="stylesheet" href="/index.css" />
+<title>タイトル</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+```  
+#### **header**  
 ```html  
 <header class="header">
  <a href="/index">
@@ -70,15 +80,19 @@ header
  </a>
 </header>
 ```  
-footer
+#### **footer**
 ```html  
 <footer>
  <ul class="links">
+  <li>
+   <a href="/profile" target="_blank">持ち垢とか</a>
+  </li>
   <li>
    <a href="/blogs" target="_blank">ブログ(準備中)</a>
   </li>
   <li>
    <a href="/articles" target="_blank">記事(試作)</a>
+  </li>
   <li>
    <a href="/tools" target="_blank">ゲーム・ツール等(試作)</a>
   </li>
@@ -128,4 +142,4 @@ iframeタグ側
 - [ ] チェックなし
 - [x] チェックあり
 
-![サイトアイコン](/headericon.png)
+![サイトアイコン](/headlineicon.png)
