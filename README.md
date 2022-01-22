@@ -47,26 +47,41 @@
 ---  
 ## **要素(自分用)**  
 ### **基礎要素**  
-#### **html**
+#### **上部**
 ```html  
+<!DOCTYPE html>
 <!-- トップならwebsite、それ以外はarticle -->
 <html prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# website: https://ogp.me/ns/website#">
-```  
-#### **head**
-##### **OGP関連**
-```html  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7CH5K0JV4J"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-7CH5K0JV4J');
+</script>
+<!-- End Global site tag (gtag.js) - Google Analytics -->
+<!-- Google Tag Manager -->
+<script>
+ (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+ var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+	j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+	f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-T2GNJJS');
+</script>
+<!-- End Google Tag Manager -->
+<!-- OGP -->
 <meta name="robots" content="max-image-preview:large" />
-<meta property="og:url" content="ページのURL(URL)url" />
+<meta property="og:url" content="ページのURL(URL)" />
 <!-- トップならwebsite、それ以外はarticle -->
 <meta property="og:type" content="website" />
 <!-- titleの指定は任意 -->
-<meta property="og:title" content="ページのタイトル(非URL)title" />
-<meta property="og:site_name" content="サイトのブランド名(非URL)site_name" />
+<meta property="og:title" content="ページのタイトル(非URL)" />
+<meta property="og:site_name" content="tatu6038.github.io" />
 <meta property="og:image" content="埋め込み画像のパス(URL)" />
-<meta property="og:description" content="説明文description" />
-```
-##### **一般**
-```html  
+<meta property="og:description" content="説明文" />
+<!-- End OGP -->
 <link rel="icon" type="image/png" href="/Images/favicon.png" />
 <link rel="stylesheet" href="/index.css" />
 <title>タイトル</title>
