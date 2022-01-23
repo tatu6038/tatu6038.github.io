@@ -100,7 +100,7 @@
 		<!-- End Google Tag Manager (noscript) -->
 		<header class="header">
 			<a href="/index">
-				<img src="/images/headlineicon.png" alt="tatu6038.github.io">
+				<img src="/Images/headlineicon.png" alt="tatu6038.github.io">
 			</a>
 			<div class="search-box">
 				<!-- Search Box -->
