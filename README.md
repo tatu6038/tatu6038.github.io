@@ -51,7 +51,7 @@
 ```html  
 <!DOCTYPE html>
 <!-- トップならwebsite、それ以外はarticle -->
-<html prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# website: https://ogp.me/ns/website#">
+<html prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# website: https://ogp.me/ns/article#">
 	<head>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7CH5K0JV4J"></script>
@@ -76,7 +76,7 @@
 		<meta name="robots" content="max-image-preview:large" />
 		<meta property="og:url" content="ページのURL(URL)" />
 		<!-- トップならwebsite、それ以外はarticle -->
-		<meta property="og:type" content="website" />
+		<meta property="og:type" content="article" />
 		<!-- titleの指定は任意 -->
 		<meta property="og:title" content="ページのタイトル(非URL)" />
 		<meta property="og:site_name" content="tatu6038.github.io" />
