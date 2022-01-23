@@ -108,3 +108,8 @@ ul.bigcontent li {
   font-size: 105%;
   font-weight: bold;
 }
+.spotify,.pixiv {
+  background-color: black;
+}
+.account {
+}
