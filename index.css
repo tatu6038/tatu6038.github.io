@@ -90,6 +90,7 @@ ul.bigcontent {
     margin: 0px;
     width: auto;
     height: auto;
+    padding: 0px;
 }
 ul.bigcontent li {
     padding: 0px;
