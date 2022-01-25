@@ -94,7 +94,7 @@ ul.bigcontent {
 }
 ul.bigcontent li {
     padding: 0px;
-    margin: 10px;
+    margin: 3px;
     width: 300px;
     height: 150px;
 }
@@ -141,6 +141,8 @@ iframe.iframe {
   padding: 0px;
 }
 .nospace {
+  line-height: 200%; /* 行間の幅 */
+  text-align: left; /* 要素の配置 */
   margin: 0px;
   padding: 0px;
 }
