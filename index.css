@@ -135,7 +135,7 @@ iframe.iframe {
   position: absolute;
   padding: 0px;
   margin: auto;
-  max-width: 275px;
+  max-width: 98%;
 }
 .middle {
   text-align: center;
