@@ -93,9 +93,9 @@ ul.bigcontent {
 }
 ul.bigcontent li {
     padding: 0px;
-    margin: 20px;
-    width: 400px;
-    height: 200px;
+    margin: 10px;
+    width: 300px;
+    height: 150px;
 }
 iframe.iframe {
   overflow: hidden;
@@ -104,27 +104,29 @@ iframe.iframe {
   margin: 0px;
   padding: 0px;
 }
-p.big {
-  font-size: 105%;
-  font-weight: bold;
-}
 .discord {
   background-image: url(/Images/discord-logo.gif);
+  background-size: contain;
 }
 .github {
   background-image: url(/Images/github-logo.png);
+  background-size: contain;
 }
 .instagram {
   background-image: url(/Images/instagram-logo.jpg);
+  background-size: contain;
 }
 .pixiv {
   background: black url(/Images/pixiv-logo.png) no-repeat;
+  background-size: contain;
 }
 .spotify {
   background: black url(/Images/spotify-logo.png) no-repeat;
+  background-size: contain;
 }
 .youtube {
   background-image: url(/Images/youtube-logo.png);
+  background-size: contain;
 }
 .account {
   border-radius: 5px;
@@ -133,9 +135,17 @@ p.big {
   padding: 0px;
   margin: auto;
 }
-p.middle {
+.middle {
   text-align: center;
   position: absolute;
   padding: 0px;
   margin: auto;
+}
+.nospace {
+  margin: 0px;
+  padding: 0px;
+}
+.big {
+  font-size: 105%;
+  font-weight: bold;
 }
