@@ -78,6 +78,8 @@ ul.links {
   height: auto;
 }
 ul.links li {
+  list-style-type: square;
+  list-style-position: inside;
   padding: 1%;
   margin: 0px;
   width: auto;
@@ -88,12 +90,11 @@ ul.blogs-articles {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
-  list-style-type: none;
-  list-style-position: inside;
   width: auto;
   height: auto;
 }
 ul.blogs-articles li {
+  list-style-type: none;
   padding: 1%;
   margin: 1%;
   width: auto;
@@ -105,8 +106,6 @@ ul.bigcontent {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  list-style-type: none;
-  list-style-position: inside;
   margin: 0px;
   width: auto;
   height: auto;
