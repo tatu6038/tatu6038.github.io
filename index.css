@@ -77,26 +77,46 @@ ul.links {
   height: auto;
 }
 ul.links li {
-  padding: 0;
-  margin: 1%;
+  padding: 1%;
+  margin: 0px;
   width: auto;
   height: auto;
 }
+ul.blogs-articles {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none;
+  list-style-position: inside;
+  width: auto;
+  height: auto;
+}
+ul.blogs-articles li {
+  padding: 1%;
+  margin: 1%;
+  width: auto;
+  min-width: 48%;
+  max-width: 100%;
+  height: auto;
+}
 ul.bigcontent {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    list-style: none;
-    margin: 0px;
-    width: auto;
-    height: auto;
-    padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0px;
+  width: auto;
+  height: auto;
+  padding: 0px;
 }
 ul.bigcontent li {
-    padding: 0px;
-    margin: 3px;
-    width: 300px;
-    height: 150px;
+  padding: 1%;
+  margin: 0px;
+  width: 300px;
+  height: 150px;
+  
 }
 iframe.iframe {
   overflow: hidden;
