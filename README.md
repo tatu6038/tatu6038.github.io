@@ -91,14 +91,14 @@
 ```  
 #### **header**  
 ```html  
-	<head>
+	<body>
 		<!-- Google Tag Manager (noscript) -->
 		<noscript>
 			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2GNJJS" height="0" width="0" style="display:none;visibility:hidden">
 			</iframe>
 		</noscript>
 		<!-- End Google Tag Manager (noscript) -->
-		<header class="header">
+		<header>
 			<a href="/index">
 				<img src="/Images/headlineicon.png" alt="tatu6038.github.io">
 			</a>
