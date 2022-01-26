@@ -72,6 +72,7 @@ ul.links {
   flex-wrap: wrap;
   flex-direction: row;
   list-style: square;
+  list-style-position: inside;
   justify-content: flex-start;
   width: auto;
   height: auto;
