@@ -25,3 +25,8 @@ jobs:
         with:
           name: report
           path: report.html
+      
+      - name: Lighthouse Audit
+        # You may pin to the exact commit or the version.
+        # uses: jakejarvis/lighthouse-action@a3bcc9973b3ce65beff316b3cac53b92e58dcc12
+        uses: jakejarvis/lighthouse-action@v0.3.2
