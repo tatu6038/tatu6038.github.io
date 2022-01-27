@@ -1,20 +1,27 @@
-name: Build project and Run Lighthouse CI
-on: [push]
+name: lighthouse
+
+on:
+  schedule:
+    - cron: '23 23 * * 0'
+
 jobs:
-  lhci:
-    name: Lighthouse CI
-    runs-on: ubuntu-latest
+  test:
+    runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v1
-      - name: Use Node.js 10.x
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+
+      - name: Install lighthouse
+        run: sudo npm i -g lighthouse
+
+      - name: Run lighthouse
+        run: |
+          lighthouse \
+            --chrome-flags="--headless" \
+            --output html --output-path ./report.html \
+            'https://<target>.com'
+
+      - name: Upload result
+        uses: actions/upload-artifact@master
         with:
-          node-version: 10.x
-      - name: npm install, build
-        run: |
-          npm install
-          npm run build
-      - name: run Lighthouse CI
-        run: |
-          npm install -g @lhci/cli@0.3.x
-          lhci autorun --upload.target=temporary-public-storage --staticDistDir=./build || echo "LHCI failed!"
+          name: report
+          path: report.html
