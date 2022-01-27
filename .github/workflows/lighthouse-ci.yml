@@ -18,7 +18,7 @@ jobs:
           lighthouse \
             --chrome-flags="--headless" \
             --output html --output-path ./report.html \
-            'https://<target>.com'
+            'https://tatu6038.github.io'
 
       - name: Upload result
         uses: actions/upload-artifact@master
