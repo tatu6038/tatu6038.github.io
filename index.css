@@ -1,5 +1,5 @@
 /*
--To You I Loved-
+-secret message-
 I regret and feel bad about that ploblem that I caused.
 Sorry about that.
 I wish I was brave to apologize to you for that…
@@ -48,8 +48,9 @@ body {
   font-size: 105%;
 }
 @font-face {
-   font-family: 'nicomoji-plus';
-   src: url('/Fonts/nicomoji-plus.ttf');
+  font-family: 'nicomoji-plus';
+  src: url('/Fonts/nicomoji-plus.ttf');
+  font-display: swap;
 }
 header{
   background: rgb(234,235,219); /* 背景色 */
