@@ -55,7 +55,7 @@
 ```html  
 <!DOCTYPE html>
 <!-- トップならwebsite、それ以外はarticle -->
-<html prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# website: https://ogp.me/ns/article#">
+<html lang="ja" prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# website: https://ogp.me/ns/article#">
 	<head>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7CH5K0JV4J"></script>
@@ -76,6 +76,7 @@
 			})(window,document,'script','dataLayer','GTM-T2GNJJS');
 		</script>
 		<!-- End Google Tag Manager -->
+		<meta charset="utf-8" />
 		<!-- OGP -->
 		<meta name="robots" content="max-image-preview:large" />
 		<meta property="og:url" content="ページのURL(URL)" />
