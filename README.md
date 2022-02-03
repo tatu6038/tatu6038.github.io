@@ -86,7 +86,7 @@
 		<meta property="og:title" content="ページのタイトル(非URL)" />
 		<meta property="og:site_name" content="tatu6038.github.io" />
 		<meta property="og:image" content="埋め込み画像のパス(URL)" />
-		<meta property="og:description" content="説明文" />
+		<meta property="og:description" content="説明文(改行の場合、半角スペース、タブスペース不可)" />
 		<!-- End OGP -->
 		<link rel="icon" type="image/png" href="/Images/favicon.png" />
 		<link rel="stylesheet" href="/index.css" />
