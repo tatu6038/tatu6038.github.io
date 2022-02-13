@@ -61,8 +61,20 @@ body {
   font-display: swap;
 }
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  /* width: 10px;
+  height: 10px; */
+  width: 5%;
+  height: 10%;
+}
+::-webkit-scrollbar-track {
+  background: darkgrey;
+}
+::-webkit-scrollbar-thumb {
+  /* background: slategrey; */
+  background-image: url("/Images/begeta_neta.jfif");
+  background-size: cover;
+  /* border-radius: 5px; */
+  border-radius: 50%;
 }
 /* サイト内の設定 終了 */
 /* 没 */
