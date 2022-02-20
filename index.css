@@ -60,16 +60,16 @@ body {
   src: url('/Fonts/nicomoji-plus.ttf');
   font-display: swap;
 }
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   /* width: 10px;
   height: 10px; */
   width: 60px;
   height: 60px;
 }
-::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
   background: darkgrey;
 }
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   /* background: slategrey; */
   background-image: url("/Images/begeta_neta.jfif");
   background-size: contain;
@@ -174,4 +174,7 @@ iframe.iframe {
   padding: 0px;
   margin: auto;
   max-width: 98%;
+}
+span.tpscemsae:hover {
+  cursor: pointer;
 }
