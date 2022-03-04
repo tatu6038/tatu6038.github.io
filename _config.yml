@@ -5,9 +5,11 @@ url: "https://tatu6038.github.io/"
 sitemap:
     file: "/sitemap.xml"
     exclude:
-        - "/atom.xml"
-        - "/feed.xml"
-        - "/feed/index.xml"
+        - "/Downloads/"
+        - "/Src/"
+        - "/404.html"
+        - "/high_secrecy.html"
+        - "/high_secrecy/"
     include_posts:
         - "/index.html"
     change_frequency_name: "monthly"
