@@ -130,6 +130,7 @@ ul.bigcontent {
   padding: 0px;
 }
 ul.bigcontent li {
+  list-style-type: none;
   padding: 1%;
   margin: 0px;
   width: 300px;
