@@ -1,3 +1,14 @@
-google_analytics: G-7CH5K0JV4J
-plugins:
-  - jekyll-sitemap
+# google_analytics: G-7CH5K0JV4J
+# plugins:
+#   - jekyll-sitemap
+url: "https://tatu6038.github.io/"
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+    include_posts:
+        - "/index.html"
+    change_frequency_name: "monthly"
+    priority_name: "0.5"
