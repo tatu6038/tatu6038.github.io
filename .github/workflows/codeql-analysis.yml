@@ -68,3 +68,23 @@ jobs:
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
+      
+    - name: generate-sitemap
+      # You may pin to the exact commit or the version.
+      # uses: cicirello/generate-sitemap@c1173ff63821f13f22ea0d3a32aaa828dd28f6ea
+      uses: cicirello/generate-sitemap@v1.8.2
+      with: 
+        # The path to the root of the website
+        path-to-root: "/index.html" # optional, default is .
+        # The url of your webpage
+        base-url-path: "https://tatu6038.github.io" # optional, default is https://web.address.of.your.nifty.website/
+        # Indicates whether to include html files in the sitemap.
+        include-html: "true" # optional, default is true
+        # Indicates whether to include pdf files in the sitemap.
+        include-pdf: "false" # optional, default is true
+        # Indicates if sitemap should be formatted in xml.
+        sitemap-format: "xml" # optional, default is xml
+        # Space separated list of additional file extensions to include in sitemap.
+        # additional-extensions: # optional, default is 
+        # Enables dropping .html from urls in sitemap.
+        drop-html-extension: "true" # optional
