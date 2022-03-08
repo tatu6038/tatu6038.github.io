@@ -75,7 +75,7 @@ jobs:
       uses: cicirello/generate-sitemap@v1.8.2
       with: 
         # The path to the root of the website
-        path-to-root: "/index.html" # optional, default is .
+        # path-to-root: # optional, default is .
         # The url of your webpage
         base-url-path: "https://tatu6038.github.io" # optional, default is https://web.address.of.your.nifty.website/
         # Indicates whether to include html files in the sitemap.
