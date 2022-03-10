@@ -14,6 +14,13 @@ div.body {
 }
 footer {
 }
+h1, h2, h3, h4, h6 {
+  font-size: 1.8rem;
+  border-bottom-style: ridge;
+  border-bottom-width: 2.8px;
+  /* border-bottom-color: deepskyblue; */
+  border-bottom-color: lime;
+}
 ul.links {
   display: flex;
   flex-wrap: wrap;
