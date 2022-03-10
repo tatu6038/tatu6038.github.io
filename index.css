@@ -83,6 +83,10 @@ body::-webkit-scrollbar-thumb {
   /* border-radius: 5px; */
   border-radius: 30px;
 }
+* {
+  width: fit-content;
+  height: fit-content;
+}
 /* サイト内の設定 終了 */
 /* 没 */
 div.placement > div {
