@@ -14,10 +14,6 @@
 * [tatu#6038のホームページ](https://bit.ly/tatu6038)  
 ブクマ表示名変えられるから勝手にやってくれ
 ### **このサイトに関して**  
-#### **とりあえず**
-1. サイトのホームにもあるけど、ただ好きなようにするだけのサイトだから、サイトの内容自体の文句とかは困るからそこは把握してね
-1. みんなの要望には応えたいからリクエストは大歓迎なんだけど、こっちもなんやかんや都合があるから完璧にはできないかもね。そこもヨロシク♪
-1. あとは特にないんだけどね、なんでこんなに自由にやってるかというと「本来の自分を容認してくれない仲間は仲間ではない。」っていう思想のもと動いてるから。ただそれだけ。
 #### **作ってる理由**   
 * 最初「お前もホームページを作らないか？(ry」てな感じで~~脅されたw~~  
   * 始めてもなんもわからんし初めは他サイトの検証してコピペしてただけなんだけどまぁだんだんわかるようになっていった(以下)  
@@ -120,23 +116,23 @@
 		<footer>
 			<ul class="links">
 				<li>
-					<a href="/profile" target="_blank">持ち垢とか</a>
+					<a href="/profile">持ち垢とか</a>
 				</li>
 				<li>
-					<a href="/blogs" target="_blank">ブログ(準備中)</a>
+					<a href="/blogs">ブログ(準備中)</a>
 				</li>
 				<li>
-					<a href="/articles" target="_blank">記事(試作)</a>
+					<a href="/articles">記事(試作)</a>
 				</li>
 				<li>
-					<a href="/tools" target="_blank">ゲーム・ツール等(試作)</a>
+					<a href="/tools">ゲーム・ツール等(試作)</a>
 				</li>
 				<li>
-					<a href="/history" target="_blank">更新履歴</a>
+					<a href="/history">更新履歴</a>
 				</li>
 			</ul>
 			<p>
-				<span style="font-size:80%;">© 2021 tatu6038.github.io All rights reserved.</span>
+				<span style="font-size:80%;">&copy; 2021 tatu6038.github.io All rights reserved.</span>
 			</p>
 		</footer>
 	</body>
