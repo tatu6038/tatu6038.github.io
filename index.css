@@ -68,15 +68,15 @@ body {
   src: url('/Fonts/nicomoji-plus.ttf');
   font-display: swap;
 }
-div.body::-webkit-scrollbar {
+.body::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
-div.body::-webkit-scrollbar-track {
+.body::-webkit-scrollbar-track {
   background-color: cornflowerblue;
   border-radius: 2.5px;
 }
-div.body::-webkit-scrollbar-thumb {
+.body::-webkit-scrollbar-thumb {
   background-color: rgb(0 0 0 / 0%);
 }
 h1, h2, h3, h4, h5, h6, div.body, p, span, a {
