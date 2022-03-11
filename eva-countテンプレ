@@ -8,7 +8,7 @@
     </head>
     <body>
         <script type="text/javascript">
-            swf2js.load("./eva_counts/ファイル名");
+            swf2js.load("/eva_counts/ファイル名");
         </script>
     </body>
 </html>
