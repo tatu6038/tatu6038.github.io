@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- トップならwebsite、それ以外はarticle -->
-<html prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# website: https://ogp.me/ns/website#">
+<html prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# website: https://ogp.me/ns/article#">
 	<head>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7CH5K0JV4J"></script>
@@ -25,28 +25,28 @@
 		<meta name="robots" content="max-image-preview:large" />
 		<meta property="og:url" content="ページのURL(URL)" />
 		<!-- トップならwebsite、それ以外はarticle -->
-		<meta property="og:type" content="website" />
+		<meta property="og:type" content="article" />
 		<!-- titleの指定は任意 -->
-		<meta property="og:title" content="記事一覧 - tatu6038.github.io" />
+		<meta property="og:title" content="HTMLとCSSの簡易的な解説" />
 		<meta property="og:site_name" content="tatu6038.github.io" />
-		<meta property="og:image" content="埋め込み画像のパス(URL)" />
-		<meta property="og:description" content="現時点までで上げている記事の一覧" />
+		<meta property="og:image" content="/Images/html-css-description/html-css-description_thumbnail.png" />
+		<meta property="og:description" content="HTMLの一般的に使われるタグの説明CSSの" />
 		<!-- End OGP -->
 		<link rel="icon" type="image/png" href="/Images/favicon.png" />
 		<link rel="stylesheet" href="/index.css" />
 		<meta charset="utf-8">
-		<title>記事一覧</title>
-		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+		<title>HTMLとCSSの簡易的な解説</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 	</head>
 	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2GNJJS" height="0" width="0" style="display:none;visibility:hidden">
+			</iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) -->
 		<header>
-			<!-- Google Tag Manager (noscript) -->
-			<noscript>
-				<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2GNJJS" height="0" width="0" style="display:none;visibility:hidden">
-				</iframe>
-			</noscript>
-			<!-- End Google Tag Manager (noscript) -->
-			<a href="/">
+			<a href="/index">
 				<img src="/Images/headlineicon.png" alt="tatu6038.github.io">
 			</a>
 			<div class="search-box">
@@ -57,30 +57,19 @@
 			</div>
 		</header>
 		<div class="body">
-			<ul class="blogs-articles">
-				<li>
-					<a href="/articles/install-fonts">ダウンロードしたフォントのインストール方法とはいかに？</a>
-				</li>
-			</ul>
 		</div>
+		<ul class="links">
+			<li>
+				<a href="./blogs" target="_blank">ブログ(準備中)</a>
+			</li>
+			<li>
+				<a href="./articles" target="_blank">お役立ち記事(準備中)</a>
+			</li>
+			<li>
+				<a href="./history" target="_blank">サイトの更新履歴</a>
+			</li>
+		</ul>
 		<footer>
-			<ul class="links">
-				<li>
-					<a href="/profile" target="_blank">持ち垢とか</a>
-				</li>
-				<li>
-					<a href="/blogs" target="_blank">ブログ(準備中)</a>
-				</li>
-				<li>
-					<a href="/articles" target="_blank">記事(試作)</a>
-				</li>
-				<li>
-					<a href="/tools" target="_blank">ゲーム・ツール等(試作)</a>
-				</li>
-				<li>
-					<a href="/history" target="_blank">更新履歴</a>
-				</li>
-			</ul>
 			<p>
 				<span style="font-size:80%;">© 2021 tatu6038.github.io All rights reserved.</span>
 			</p>
