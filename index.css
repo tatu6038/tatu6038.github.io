@@ -16,11 +16,35 @@ footer {
   width:auto;
 }
 h1, h2, h3, h4, h6 {
-  font-size: 1.8rem;
   border-bottom-style: ridge;
   border-bottom-width: 2.8px;
   /* border-bottom-color: deepskyblue; */
   border-bottom-color: lime;
+}
+h1 {
+  font-size: 1.9em;
+}
+h2 {
+  font-size: 1.6em;
+}
+h3 {
+  font-size: 1.3em;
+}
+pre {
+  padding: 5px;
+  margin: 2px;
+  border-radius: 5px;
+  background-color: slategray;
+  font-family: monospace;
+  font-weight: bold;
+}
+code {
+  padding: 5px;
+  margin: 2px;
+  border-radius: 5px;
+  background-color: slategray;
+  font-family: monospace;
+  font-weight: bold;
 }
 ul.links {
   display: flex;
@@ -55,6 +79,7 @@ ul.links li {
 .nospace {
   line-height: 200%; /* 行間の幅 */
   text-align: left; /* 要素の配置 */
+  display: inline;
   margin: 0px;
   padding: 0px;
 }
