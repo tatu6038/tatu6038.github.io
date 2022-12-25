@@ -6,19 +6,24 @@ header{
 }
 div.body {
   line-height: 200%; /* 行間の幅 */
-  text-align: left; /* 要素の配置 */
+  text-align: center; /* 要素の配置 */
   padding: 5px 0px 5px 0px;
   margin-right: 10px;
   margin-left: 10px;
+  max-width: 95%;
 }
 footer {
   width:auto;
 }
-h1, h2, h3, h4, h6 {
-  border-bottom-style: ridge;
-  border-bottom-width: 2.8px;
-  /* border-bottom-color: deepskyblue; */
-  border-bottom-color: lime;
+.index {
+  border-color: black;
+  border-width: 3px;
+}
+h1, h2, h3, h4, h5, h6 {
+  border-style: solid;
+  border-width: 0 0 3px 13px;
+  border-color: lime;
+  padding: 0.6% 1%;
 }
 h1 {
   font-size: 1.9em;
@@ -29,6 +34,12 @@ h2 {
 h3 {
   font-size: 1.3em;
 }
+h4 {
+  font-size: 1.1em;
+}
+h5 {
+  font-size: 1em;
+}
 pre {
   padding: 5px;
   margin: 2px;
@@ -36,6 +47,13 @@ pre {
   background-color: slategray;
   font-family: monospace;
   font-weight: bold;
+  color: black;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+pre::-webkit-scrollbar{
+  display:none;
 }
 code {
   padding: 5px;
@@ -44,6 +62,7 @@ code {
   background-color: slategray;
   font-family: monospace;
   font-weight: bold;
+  color: black;
 }
 ul.links {
   display: flex;
@@ -62,6 +81,9 @@ ul.links li {
   width: auto;
   height: auto;
 }
+ul.links>li::marker {
+  color: floralwhite;
+}
 /* 基礎要素 終了 */
 /* 文字の装飾等 */
 .big {
@@ -71,6 +93,12 @@ ul.links li {
 .middle {
   text-align: center;
   padding: 0px;
+}
+img.small {
+  width: 10em;
+}
+img.midium {
+  width: 20em;
 }
 /* 文字の装飾等 終了 */
 /* サイト内の設定 */
@@ -103,7 +131,8 @@ body {
 .body::-webkit-scrollbar-thumb {
   background-color: rgb(0 0 0 / 0%);
 }
-h1, h2, h3, h4, h5, h6, div.body, p, span {
+h1, h2, h2>a, h3, h3>a, h4, h4>a, h5, h5>a, h6, h6>a, div.body, p, span {
+  text-align: left;
   width: fit-content;
   height: fit-content;
   color: floralwhite;

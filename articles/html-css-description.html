@@ -27,17 +27,16 @@
 		<!-- トップならwebsite、それ以外はarticle -->
 		<meta property="og:type" content="article" />
 		<!-- titleの指定は任意 -->
-		<meta property="og:title" content="HTMLとCSSの簡易的な解説" />
+		<meta property="og:title" content="HTMLとCSSの簡単な書き方解説！" />
 		<meta property="og:site_name" content="tatu6038.github.io" />
 		<meta property="og:image" content="/Images/html-css-description/html-css-description_thumbnail.png" />
-		<meta property="og:description" content="HTML5の一般的に使われるタグの説明と書き方＆CSS3の主なプロパティや書き方の解説" />
-		<meta name="description" content="HTMLとCSSのタグとプロパティ、書き方の簡単な解説(理解して書くのが簡単とは言ってない)
-12月アドベント企画！" />
+		<meta property="og:description" content="HTML5の一般的に使われるタグの説明と書き方＆CSS3の主なプロパティや書き方の簡単な解説【初心者必見！】" />
+		<meta name="description" content="HTMLとCSSのタグとプロパティ、書き方の簡単な解説！【初心者必見！】" />
 		<!-- End OGP -->
-		<link rel="icon" type="image/png" href="/Images/favicon.png" />
+		<link rel="icon" type="image/png" href="/Images/general/favicon.png" />
 		<link rel="stylesheet" href="/index.css" />
 		<meta charset="utf-8">
-		<title>HTML5とCSS3の簡易的な解説</title>
+		<title>HTML5とCSS3の簡単な書き方解説！</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 	</head>
 	<body>
@@ -49,7 +48,7 @@
 		<!-- End Google Tag Manager (noscript) -->
 		<header>
 			<a href="/">
-				<img src="/Images/headlineicon.png" alt="tatu6038.github.io">
+				<img src="/Images/general/headlineicon.png" alt="tatu6038.github.io">
 			</a>
 			<div class="search-box">
 				<!-- Search Box -->
@@ -59,14 +58,165 @@
 			</div>
 		</header>
 		<div class="body">
+			<!-- 前座 -->
 			<h1>HTML5とCSS3の一般的に使われるタグと主なプロパティの説明と書き方解説</h1>
 			<p>駆け出しウェブコーダーで序盤になにから始めればいいのかわからない方も多いかと思います(多くはないか…？)。なので今回、HTMLとCSSの基本的なタグ、プロパティ、記述ルールを解説します。</p>
-			<h2>前提知識</h2>
+			<h2>目次</h2>
+			<div class="index">
+				<ol>
+					<li><p><a href="#zentei">前提知識</a></p></li>
+					<li><p><a href="#html">HTMLに関して</a></p>
+						<ul>
+							<li><p><a href="#tag">タグ</a></p></li>
+							<li><p><a href="#htmlKakikata">HTMLの記述方法</a></p></li>
+						</ul>
+					</li>
+					<li><p><a href="#css">CSSについて</a></p>
+						<ul>
+							<li><p><a href="#property">プロパティ</a></p></li>
+							<li><p><a href="#cssKakikata">CSSの記述方法</a></p></li>
+						</ul>
+					</li>
+					<li><p><a href="#postscript">あとがき</a></p></li>
+				</ol>
+			</div>
+				<!-- 前提知識 -->
+			<h2 id="zentei">前提知識 <a href="#zentei">&para;</a></h2>
 			<p>読むうえでわかりづらいと判断したものはこちらに説明があります。</p>
-			<h2>HTMLに関して</h2>
-			<p>HTMLの記述方法、一般的なタグ、基本知識を説明します。</p>
 			<h3>開始タグ</h3>
 			<p><code>&lt;&gt;</code>の中にタグ名が入ったタグ</p>
+			<h3>終了タグ</h3>
+			<p><code>&lt;&gt;</code>の中にタグ名、その直後に<code>&frasl;</code>が入ったタグ</p>
+			<h3>タグ</h3>
+			<p>開始タグ、終了タグ、または要素をつくるもののこと</p>
+			<h3>要素</h3>
+			<p>開始タグと終了タグを含む、その間の記述内容(要素など)を内包するもの</p>
+			<h3>子要素</h3>
+			<p>ある要素から見た直下の要素のこと</p>
+			<h3>親要素</h3>
+			<p>ある要素から見た直上の要素のこと</p>
+			<h3>子孫要素</h3>
+			<p>ある要素から見てその要素の内部の要素全てのこと</p>
+			<h3>margin &frasl; padding</h3>
+			<p>margin、paddingともにCSSプロパティのひとつで、下画像を参考にpaddingは要素の縁(border)からコンテンツ(文字など)までの間で、marginは要素の縁から隣接するほかの要素のmarginまでの間のことです。適切な間がとれているとデザイン的に優れたり段落の認識がしやすくなります。</p>
+			<img class="small" src="/Images/html-css-description/element-space.png" alt="中心にコンテンツ、その外側のborderとの間にpadding。borderの外側にmargin。" />
+			<h3>属性</h3>
+			<p><code>&lt;p class=&quot;クラス名&quot;&gt;</code>のクラス名部分や<code>&lt;img src=&quot;&lt;ファイルのパス&gt;&quot; alt=&quot;&lt;画像の説明&gt;&quot;</code>のファイルのパス、画像の説明文部分などの、開始タグのタグ名の後に続くオプションのようなものです。</p>
+				<!-- HTMLに関して -->
+			<h2 id="html">HTMLに関して <a href="#html">&para;</a>
+			</h2>
+			<p>HTMLの記述方法、一般的なタグ、基本知識を説明します。</p>
+					<!-- タグ -->
+			<h3 id="tag">タグ <a href="#tag">&para;</a></h3>
+			<p>こちらでは、使用をおすすめできないものを含めない一般的なタグを紹介します。</p>
+			<h4>htmlタグ</h4>
+			<p>どこからどこまでがHTMLの記述なのか認識させるものと考えてください。実際にはタグでもなく、htmlタグに関連があるわけでもありませんが、開始タグの前に<code>&lt;!DOCTYPE html&gt;</code>"と形式を宣言することが推奨されます。marginの値はデフォルトで0ではありません。</p>
+			<h4>headタグ</h4>
+			<p>html要素の子要素でheadタグ、bodyタグの順に並びます。この2つは必須ではありませんが、ざっくりと「読込内容」と「表示内容」と分別するものと認識してください。子要素には主にmetaタグ、linkタグ、titleタグ、scriptタグが挙げられます。</p>
+			<h4>bodyタグ</h4>
+			<p>html要素の子要素でheadタグ、bodyタグの順に並びます。この2つは必須ではありませんが、ざっくりと「読込内容」と「表示内容」と分別するものと認識してください。主に表示するコンテンツを子要素にします。</p>
+			<h4>divタグ</h4>
+			<p>1つのまとまりをつくる際に使われます。ひとつのhtmlを意味合いやコンテンツ、役割で分割するために使われます。divisionが元になっています。</p>
+			<h4>pタグ</h4>
+			<p>ひとつの段落をつくる際に使われます。displayの値がデフォルトでblockになっています。paragraphが元になっています。</p>
+			<h4>spanタグ</h4>
+			<p>一部に何らかの長くない文を入れる場合に使われます。主にpタグ内の文の一部の性質や装飾を変更する場合に使われます。displayの値がデフォルトでinlineになっています。</p>
+			<h4>aタグ</h4>
+			<p>ハイパーリンクを作成する際に使用します。単体でも機能はしますが、文章のデザインやCSSプロパティなどもあるのでpタグ内に収めることを推奨します。</p>
+			<h4>ulタグ</h4>
+			<p>ナンバリングしないリストを作成する際に使用します。liタグのmargin/padding以外にもこちらにもpadding/marginがあります。</p>
+			<h4>olタグ</h4>
+			<p>ナンバリングリストを作成する際に使用します。liタグのmargin/padding以外にもこちらにもpadding/marginがあります。</p>
+			<h4>liタグ</h4>
+			<p>ul/ol タグでリストの1項目を作成する際に使用します。リストを作る際にのみ使用することをおすすめします。見出しなどに使うと微妙な感じになってしまいます。</p>
+			<h4>metaタグ</h4>
+			<p>メタ情報を設定するタグです。name属性やproperty属性の値がいくつもあり、これだけで眠くなるので説明は省かせてもらいますm(_ _)m<br>主なものは<br>
+				<code>&lt;meta charset=&quot;&lt;utf-8やshift_jis(やっぱりutf-8がおすすめ)&gt;&quot;&gt;</code><br>
+				<code>&lt;meta name=&quot;viewport&quot; content=&quot;&lt;このあたりは調べてください&gt;&quot;&gt;</code><br>
+				<code>&lt;meta property=&quot;og:&lt;sitenameかtitleかdescriptionかimage&gt;&quot; content=&quot;&lt;内容&gt;&quot;&gt;</code><br>
+				といった感じです。
+			</p>
+			<h4>linkタグ</h4>
+			<p>メタ情報の中でも何かのファイルを読み込む場合に使うタグです。こちらも多すぎて説明ができないので省かせてもらいます。<br>いつも使うものは<br>
+				<code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text&frasl;css&quot; href=&quot;&lt;ファイルのパス.css&gt;&quot;></code><br>
+				<code>&lt;link rel=&quot;icon&quot; type=&quot;image&frasl;png&quot; href=&quot;&lt;ファイルのパス.png&gt;&quot;</code><br>
+				です。最近はtype属性はなくても割と大丈夫です。
+			</p>
+					<!-- HTMLの記述方法 -->
+			<h3 id="htmlKakikata">HTMLの記述方法 <a href="#htmlKakikata">&para;</a></h3>
+			<p>こちらではHTMLの書き方のルールを簡単に説明します。</p>
+			<h4>基本</h4>
+			<p>開始タグと終了タグで要素やコンテンツ(文字等)を囲んで１つの要素を作ります。</p>
+			<p>コードの上で改行しても文章の改行にはなりません。pタグで段落分けをするかbrタグを使って改行ができます。しかし、brタグを使うとデバイスの幅によってはおかしな部分での改行になることもしばしばなので、基本的にはあまり改行はせず、pタグで文章を段落ごとにひとまとめにすることをおすすめします(ある程度の長文の段落の移動ならすこしおかしな見た目の改行でも違和は生じにくいから)。</p>
+			<h4>おまけ</h4>
+			<p>metaタグのような終了タグのないものは、xhtmlファイルとして閲覧される場合を考えて末尾を<code>なんたらかんたら &frasl;&gt;</code>とすることが推奨されていますが、ほとんどそんなユーザーはいないので、あまり気にしなくて大丈夫です。</p>
+			<p>imgタグやaタグのsrc属性やhref属性はあまり覚えられませんでしたが、そのあたりはやりながらおぼえられます。</p>
+				<!-- CSSについて -->
+			<h2 id="css">CSSについて <a href="">&para;</a></h2>
+			<p>CSSの記述方法、よく使うプロパティを紹介します。</p>
+			<h3 id="property">プロパティ <a href="#property">&para;</a></h3>
+			<p>よく使われるCSSプロパティ</p>
+			<h4>width</h4>
+			<p>要素の横幅です。デフォルトがautoですがdisplayの値がinlineならfit-content、blockなら横に伸びる感じです。</p>
+			<h4>max-width</h4>
+			<p>widthの最大の値を強制するものです。これ以上は大きくならないという値です。widthと使います。min-widthと併用可能です。絶対値でも相対値でも可能です。</p>
+			<h4>min-width</h4>
+			<p>widthの最小の値を強制するものです。これ以上は小さくならないという値です。widthと使います。max-widthと併用可能です。絶対値でも相対値でも可能です。</p>
+			<h4>height</h4>
+			<p>要素の縦幅です。デフォルトがautoですがfit-contentと同じ感じはします。</p>
+			<h4>max-width</h4>
+			<p>heightの最大の値を強制するものです。これ以上は大きくならないという値です。heightと使います。min-heightと併用可能です。絶対値でも相対値でも可能です。</p>
+			<h4>min-height</h4>
+			<p>heightの最小の値を強制するものです。これ以上は小さくならないという値です。heightと使います。max-heightと併用可能です。絶対値でも相対値でも可能です。</p>
+			<h4>padding</h4>
+			<p>widthとheightで定められた大きさから要素の縁(border)までのスペースです。上下左右それぞれ指定できます。</p>
+			<h4>margin</h4>
+			<p>要素の縁(border)からほかの隣接した要素のmarginまたはborderまでのスペースです。</p>
+			<h4>border</h4>
+			<ul>
+				<li><p>border-style</p><p>線のスタイルです。なしでも要素のかどがトリムされます。</li>
+				<li><p>border-color</p><p>線の色です。カラー名や16進数、rgb(rgba)などで指定できます。</p></li>
+				<li><p>border-width</p><p>線の幅です。</p></li>
+				<li><p>border-radius</p><p>角丸の半径です。要素のwidthの半分の値が上限で、円になります。</p></li>
+			</ul>
+			<h4>text-align</h4>
+			<p>要素の位置です。値はleftかcenterかrightです。</p>
+			<h4>color</h4>
+			<p>要素の色です。影響があるのはテキストだけになります。(たぶん…)</p>
+			<h4>font-size</h4>
+			<p>文字の大きさです。</p>
+			<h4>font-family</h4>
+			<p>フォントを選択します。フォントの名称(フォントファミリーの名称)に空白が含まれる場合は<code>&quot;&quot;</code>で囲む必要があり、そうでなくとも囲むことで区別がしやすくなります。フォントの総称(総称フォントファミリー名)はその必要はありません。総称フォントファミリーを指定すると、それに合うフォントが自動選択されます。総称フォントファミリーの一覧はこちらの<a href="https://developer.mozilla.org/ja/docs/Web/CSS/font-family#%E5%80%A4">font-family - CSS: カスケーディングスタイルシート | MDN</a>からご確認ください。</p>
+			<h4>line-height</h4>
+			<p>主にpタグ内の折りたたまれた文章同士の行間の幅です。</p>
+			<h4>background</h4>
+			<ul>
+				<li><p>background-color</p><p>その要素の背景色です。</p></li>
+				<li><p>省略m(_ _)m</p></li>
+			</ul>
+			<h4>display</h4>
+			<ul>
+				<li><p>inline</p><p>要素同士で隣接できるというものです。</p></li>
+				<li><p>block</p><p>要素同士で隣接できないというものです。</p></li>
+				<li><p>inline-block</p>私はあまり使いませんが、両方のお得な性質を持っているものの、inlineもしくはblockが使えるのであればそちらを使うというのが得策でしょう。</li>
+				<li><p>flex</p><p>アイテムリストを作る時などに便利です。しかし、あなたたちが踏み入れていいような領域ではないので、使うことはとにかくおすすめできません。</p></li>
+			</ul>
+			<h3 id="cssKakikata">CSSの記述方法 <a href="#cssKakikata">&para;</a></h3>
+			<p>CSSの基本的な書き方です。</p>
+			<h4>基本</h4>
+			<p>基本は、セレクタとプロパティ、その値を指定して完了です。その他にも@mediaや@font-faceなどもありますが、そちらもどちゃくそ長くなってしまうため、次の機会とさせてもらいます。</p>
+			<p>値はpxや%、emなどがありますが、単位を相対値にすることでユーザーフレンドリー性が増します。おすすめは%とemです。</p>
+			<p>以下は上記の説明をわかりやすくするための例です。</p>
+			<h5>例1</h5>
+			<pre><code>p, a, span{</code><br><code>  padding: 5%;</code><br><code>  margin: 0px;</code><br><code>}</code></pre>
+			<h5>例2</h5>
+			<pre><code>.ClassName, #IdName {</code><br><code>  width: fit-content;</code><br><code>  height: fit-content;</code><br><code>}</code></pre>
+			<h5>例3</h5>
+			<p>クラス属性がClassNameのTagname1の子孫要素のTagName2と、TagName3の子要素のTagName4と、TagName5の子要素のTagName6の子要素のTagName7がセレクタにある。</p>
+			<pre><code>TagName1.ClassName TagName2, Tagname3 &gt; Tagname4, TagName5 &gt; TagName6 &gt; TagName7 {</code><br><code>  color: white;</code><br><code>  background-color: black;</code><br><code>}</code></pre>
+			<h2 id="postscript">あとがき <a href="#postscript">&para;</a></h2>
+			<p>この記事を通してHTML&nbsp;&frasl;&nbsp;CSSを理解し、楽しんでもらえたらうれしいです！そして、よろしければコーディング仲間としてnCreateに参加してもらえるとうれしいです！</p>
+			<p>ご閲覧ありがとうございました！<br>情報に誤りがあればご連絡ください。</p>
 		</div>
 		<ul class="links">
 			<li>
