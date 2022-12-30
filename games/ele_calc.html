@@ -27,7 +27,7 @@
 		<!-- トップならwebsite、それ以外はarticle -->
 		<meta property="og:type" content="article" />
 		<!-- titleの指定は任意 -->
-		<meta property="og:title" content="電卓v0.1 by.tatu" />
+		<meta property="og:title" content="電卓v1.0 by.tatu" />
 		<meta property="og:site_name" content="tatu6038.github.io" />
 		<meta property="og:image" content="" />
 		<meta property="og:description" content="" />
@@ -36,7 +36,7 @@
 		<link rel="icon" type="image/png" href="/Images/general/favicon.png" />
 		<link rel="stylesheet" href="/index.css" />
 		<meta charset="utf-8">
-		<title>電卓v0.1 by.tatu</title>
+		<title>電卓v1.0 by.tatu</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
         <script src="/Src/javascripts/ele_calc.js" defer></script>
 	</head>
@@ -57,12 +57,18 @@
                 border-style: solid;
                 padding: 2%;
             }
-            p.txt {
-                width: fit-content;
+            p#txt {
+				max-width: 100%;
                 height: fit-content;
                 margin: 0 0 0 auto;
                 text-align: right;
+				overflow: scroll;
+				-ms-overflow-style: none;
+				scrollbar-width: none;
             }
+			p#txt::-webkit-scrollbar {
+				display:none;
+			}
             div.buts {
                 text-align: right;
             }
@@ -93,30 +99,35 @@
 			</div>
 		</header>
 		<div class="body">
-			<h1>電卓v0.1 by.tatu</h1>
+			<h1>電卓v1.0 by.tatu</h1>
             <div class="cal">
-                <div class="res"><p class="txt">0</p></div>
+                <div class="res"><p id="txt">0</p></div>
                 <div class="buts">
-                    <button onclick="ac()" class="cal" type="button">AC</button><br>
+                    <button onclick="num('ac')" class="cal" type="button">AC</button><br>
                     <button onclick="num(1)" class="num" type="button">1</button>
 					<button onclick="num(2)" class="num" type="button">2</button>
 					<button onclick="num(3)" class="num" type="button">3</button>
-					<button onclick="sym(add)" class="cal" type="button">+</button><br>
+					<button onclick="num('add')" class="cal" type="button">+</button><br>
                     <button onclick="num(4)" class="num" type="button">4</button>
 					<button onclick="num(5)" class="num" type="button">5</button>
 					<button onclick="num(6)" class="num" type="button">6</button>
-					<button onclick="sym(sub)" class="cal" type="button">-</button><br>
+					<button onclick="num('sub')" class="cal" type="button">-</button><br>
                     <button onclick="num(7)" class="num" type="button">7</button>
 					<button onclick="num(8)" class="num" type="button">8</button>
 					<button onclick="num(9)" class="num" type="button">9</button>
-					<button onclick="sym(mul)" class="cal" type="button">×</button><br>
+					<button onclick="num('mul')" class="cal" type="button">×</button><br>
                     <button onclick="num(0)" class="num" type="button">0</button>
-					<button onclick="dot()" class="num" type="button">.</button>
-					<button onclick="res()" class="num" type="button">=</button>
-					<button onclick="sym(div)" class="cal" type="button">÷</button>
+					<button onclick="num('dot')" class="num" type="button">.</button>
+					<button onclick="num('res')" class="num" type="button">=</button>
+					<button onclick="num('div')" class="cal" type="button">÷</button>
                 </div>
             </div>
-            <p>今のところ四則演算と括弧なしの計算しかできません…</p>
+            <ul>
+				<li>四則演算</li>
+				<li>括弧なしの計算</li>
+				<li>イコールを押しながらの継続した計算</li>
+				<p>しかできません…</p>
+			</ul>
 		</div>
 		<ul class="links">
 			<li>

@@ -24,7 +24,10 @@ h1, h2, h3, h4, h5, h6 {
   border-style: solid;
   border-width: 0 0 3px 13px;
   border-color: lime;
+  text-align: left;
+  color: floralwhite;
   padding: 0.6% 1%;
+  width: 100%;
 }
 h1 {
   font-size: 1.9em;
@@ -132,7 +135,7 @@ body {
 .body::-webkit-scrollbar-thumb {
   background-color: rgb(0 0 0 / 0%);
 }
-h1, h2, h2>a, h3, h3>a, h4, h4>a, h5, h5>a, h6, h6>a, div.body, p, span {
+h2>a, h3>a, h4>a, h5>a, h6>a, div.body, p, span {
   text-align: left;
   width: fit-content;
   height: fit-content;
