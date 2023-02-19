@@ -1,0 +1,12 @@
+const canvas = document.getElementById("gameScreen");
+canvas.setAttribute("height", 300);
+canvas.setAttribute("width", 600);
+canvas.style.width = "600px";
+const ctx = canvas.getContext("2d");
+ctx.fillStyle = "white";
+ctx.fillRect(0, 0, 600, 300);
+ctx.strokeStyle = "black";
+ctx.strokeRect(200, 210, 200, 60);
+ctx.font = "80px dotFont";
+ctx.fillStyle = "black";
+ctx.fillText("テスト",30, 100);

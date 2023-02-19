@@ -8,8 +8,7 @@ div.body {
   line-height: 200%; /* 行間の幅 */
   text-align: center; /* 要素の配置 */
   padding: 5px 0px 5px 0px;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin: 0px 10px 0px 10px;
   max-width: 95%;
 }
 footer {
