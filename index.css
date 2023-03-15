@@ -1,15 +1,16 @@
 /* 基礎要素 */
 header{
-  padding: 5px ; /* ラインから表示までの幅 */
+  padding: 1% ; /* ラインから表示までの幅 */
+  width: 98%;
   text-align: center;
   top: 0px;
 }
 div.body {
   line-height: 200%; /* 行間の幅 */
   text-align: center; /* 要素の配置 */
-  padding: 5px 0px 5px 0px;
-  margin: 0px 10px 0px 10px;
-  max-width: 95%;
+  padding: 1% 0px 1% 0px;
+  margin: 0px 2% 0px 2%;
+  width: 94%;
 }
 footer {
   width:auto;
@@ -26,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
   color: floralwhite;
   padding: 0.6% 1%;
-  width: 100%;
+  width: 98%;
 }
 h1 {
   font-size: 1.9em;
@@ -71,7 +72,7 @@ ul.links {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  list-style-type: circle;
+  list-style-type: square;
   list-style-position: inside;
   justify-content: flex-start;
   width: auto;
@@ -84,7 +85,10 @@ ul.links li {
   width: auto;
   height: auto;
 }
-ul.links>li::marker {
+ul {
+  list-style-type: disc;
+}
+/*ul.links>*/li::marker {
   color: floralwhite;
 }
 /* 基礎要素 終了 */
@@ -92,6 +96,11 @@ ul.links>li::marker {
 .big {
   font-size: 105%;
   font-weight: bold;
+}
+.small {
+  font-size: 80%;
+  line-height: 120%;
+  margin: 2% 0px;
 }
 .middle {
   text-align: center;
@@ -134,7 +143,7 @@ body {
 .body::-webkit-scrollbar-thumb {
   background-color: rgb(0 0 0 / 0%);
 }
-h2>a, h3>a, h4>a, h5>a, h6>a, div.body, p, span {
+h2>a, h3>a, h4>a, h5>a, h6>a, p, span {
   text-align: left;
   width: fit-content;
   height: fit-content;
