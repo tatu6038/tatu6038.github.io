@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# website: https://ogp.me/ns/article#">
+	<head>
+		<!-- Google Tag Manager -->
+		<script>
+			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+			var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+			j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+			f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-T2GNJJS');
+		</script>
+		<!-- End Google Tag Manager -->
+		<!-- OGP -->
+		<meta name="robots" content="max-image-preview:large" />
+		<meta property="og:url" content="https://tatu6038.github.io" />
+		<!-- トップならwebsite、それ以外はarticle -->
+		<meta property="og:type" content="article" />
+		<!-- titleの指定は任意 -->
+		<meta property="og:title" content="GitHub Pagesでサイトマップを自動生成する方法 - tatuの部屋" />
+		<meta property="og:site_name" content="tatuの部屋" />
+		<meta property="og:image" content="埋め込み画像のパス(URL)" />
+		<meta property="og:description" content="GitHubのリポジトリのファイルをWebページ化できるGitHub Pagesでのサイトマップの自動生成の方法の紹介です。今回も画像はありません。時間もないので手短に済ませます。" />
+		<!-- End OGP -->
+		<link rel="preload" href="/index.css" as="style" />
+		<link rel="icon" type="image/png" href="/Images/favicon.png" />
+		<link rel="stylesheet" href="/index.css" />
+		<meta charset="utf-8">
+		<title>Github Pagesでサイトマップを自動生成する方法 - tatuの部屋</title>
+		<meta name="description" content="GitHubのリポジトリのファイルをWebページ化できるGitHub Pagesでのサイトマップの自動生成の方法の紹介です。今回も画像はありません。時間もないので手短に済ませます。" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+		<script type="text/javascript" src="/Src/javascripts/kkspgtp.js" defer></script>
+	</head>
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2GNJJS" height="0" width="0" style="display:none;visibility:hidden">
+			</iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<header>
+			<a href="/">
+				<img src="/Images/headlineicon.png" alt="tatu6038.github.io">
+			</a>
+			<div class="search-box">
+				<!-- Search Box -->
+				<script async src="https://cse.google.com/cse.js?cx=6f76b0932a6b7ea3e"></script>
+				<div class="gcse-searchbox-only"></div>
+				<!-- End Search Box -->
+			</div>
+		</header>
+		<nav class="BreadcrumbList">
+			<ol class="BreadcrumbList" itemscope itemtype="https://schema.org/BreadcrumbList">
+				<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+					<a itemprop="item" href="/"><span itemprop="name">ホーム</span></a>
+					<meta itemprop="position" content="1" />
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+					<a itemprop="item" href="/articles"><span itemprop="name">記事一覧</span></a>
+					<meta itemprop="position" content="2" />
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+					<span itemprop="name">GitHub Pagesでサイトマップを自動生成する方法</span>
+					<meta itemprop="position" content="3" />
+				</li>
+			</ol>
+		</nav>
+		<div class="body">
+            <h1>Github Pagesでサイトマップを自動生成する方法</h1>
+			<p>GitHubのリポジトリのファイルをWebページ化できるGitHub Pagesでのサイトマップの自動生成の方法の紹介です。今回も画像はありません。時間もないので手短に済ませます。</p>
+			<h2>サイトマップとは</h2>
+			<p>主にサイトのページの場所や更新日などをまとめて記したファイルです。これをGoogleなどのクローラにウィンウィン読み込ませます。</p>
+			<p>サイトマップの話なので今回はGSCなどの話は割愛します。</p>
+			<h2>自動生成する方法</h2>
+			<p>リポジトリの最上階層に<code>_config.yml</code>というファイルを作成し、そこに以下のような記述をします。</p>
+			<pre><code>plugins:</code><br><code> - jekyll-sitemap</code></pre>
+			<p>また、必要に応じて<a href="https://pages.github.com/themes/">サポートされているテンプレート</a>から選んで以下のように記述し、サイトのデザインを決めたうえでマークダウンを使うこともできます(指定しなくてもマークダウンでページは作れますし表示もできます)。</p>
+			<pre><code>theme: テーマ名</code></pre>
+			<p>詳しくは<a href="https://docs.github.com/ja/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll">公式の文書</a>をご確認ください。</p>
+			<p>これでサイトマップが生成されます。サイトマップが生成されるまでには<b>時間がかかる</b>場合があります。気長に待ちましょう。サイトマップができたら、<b>リポジトリには表示されません</b>が、先ほど記述した<code>_config.yml</code>と同じ階層に<code>sitemap.xml</code>という名前で生成され、ブラウザーで確認することができます。</p>
+			<h2>そのあとは</h2>
+			<p>GSCなどに送信して終わりです。GSCが自動でサイトマップの更新をする…らしいのですが、されないようなので定期的に送信し直しましょう。面倒であればActionsで自動的に登録するようにしましょう。自分はもちろんYAMLを書けないのでコピペして編集しただけです。</p>
+			<h1>あとがき</h1>
+			<p>読んでいただきありがとうございました。次はGSCとActionsを取り上げようと思います。</p>
+		</div>
+		<footer>
+			<ul class="links">
+				<li>
+					<a href="/profile" target="_blank">持ち垢とか</a>
+				</li>
+				<li>
+					<a href="/blogs" target="_blank">ブログ(準備中)</a>
+				</li>
+				<li>
+					<a href="/articles" target="_blank">記事(試作)</a>
+				</li>
+				<li>
+					<a href="/tools" target="_blank">ゲーム・ツール等(試作)</a>
+				</li>
+				<li>
+					<a href="/history" target="_blank">更新履歴</a>
+				</li>
+			</ul>
+			<p style="font-size:80%;">
+				<span onclick="scerqet()">©</span> 2021 tatu6038.github.io All rights reserved.
+			</p>
+		</footer>
+	</body>
+</html>
