@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- トップならwebsite、それ以外はarticle -->
+<html prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# website: https://ogp.me/ns/article#">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7CH5K0JV4J"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-7CH5K0JV4J');
+		</script>
+		<!-- End Global site tag (gtag.js) - Google Analytics -->
+		<!-- Google Tag Manager -->
+		<script>
+			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+			var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+			j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+			f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-T2GNJJS');
+		</script>
+		<!-- End Google Tag Manager -->
+		<!-- OGP -->
+		<meta name="robots" content="max-image-preview:large" />
+		<meta property="og:url" content="ページのURL(URL)" />
+		<!-- トップならwebsite、それ以外はarticle -->
+		<meta property="og:type" content="article" />
+		<!-- titleの指定は任意 -->
+		<meta property="og:title" content="Buckshot Roulette" />
+		<meta property="og:site_name" content="tatu6038.github.io" />
+		<meta property="og:image" content="" />
+		<meta property="og:description" content="Buckshot Roulette(戦略型ロシアンルーレットゲーム)の非公式ブラウザ版(超低品質)です。made by tatu" />
+		<meta name="description" content="Buckshot Roulette(戦略型ロシアンルーレットゲーム)の非公式ブラウザ版(超低品質)です。made by tatu" />
+		<!-- End OGP -->
+		<link rel="icon" type="image/png" href="/Images/general/favicon.png" />
+		<link rel="stylesheet" href="/index.css" />
+		<meta charset="utf-8" />
+		<title>Buckshot Roulette</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+        <script src="/Src/javascripts/buckshot_roulette.js" defer></script>
+	</head>
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2GNJJS" height="0" width="0" style="display:none;visibility:hidden">
+			</iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<header>
+			<a href="/">
+				<img src="/Images/general/headlineicon.png" alt="tatu6038.github.io">
+			</a>
+			<div class="search-box">
+				<!-- Search Box -->
+				<script async src="https://cse.google.com/cse.js?cx=6f76b0932a6b7ea3e"></script>
+				<div class="gcse-searchbox-only"></div>
+				<!-- End Search Box -->
+			</div>
+		</header>
+        <style>
+            p.button {
+                font-size:xx-large;
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+                line-height: 87px;
+                text-align: right;
+            }
+            p.button > span {
+                background-color: darkgray;
+                color: black;
+                padding: 20px 30px;
+                border-color: gray;
+                border-width: 3px;
+                border-style: solid;
+            }
+            p.button > span:hover {
+                font-weight: bold;
+            }
+            p.button > span:active {
+                color: cadetblue;
+            }
+        </style>
+		<div class="body">
+            <h1>Buckshot Roulette(ローカル版)</h1>
+            <textarea name="" id="" placeholder="最大値を入れてボタンを押すと0からその数までの数字がランダムで出ます" cols="80" rows="1" readonly></textarea>
+            
+            <p class="button">
+                <span onclick="num('1')">1</span><span onclick="num('2')">2</span><span onclick="num('3')">3</span><span onclick="num('4')">4</span><span onclick="num('5')">5</span><span onclick="num('6')">6</span><span onclick="num('7')">7</span><span onclick="num('8')">8</span><br><span onclick="next()">NEXT</span><span onclick="newgame()">NEW GAME</span>
+            </p>
+            <textarea name="" id="" cols="50" rows="20" readonly></textarea>
+        </div>
+		<footer>
+			<p>
+				<span style="font-size:80%;">© 2021 tatu6038.github.io All rights reserved.</span>
+			</p>
+		</footer>
+	</body>
+</html>
