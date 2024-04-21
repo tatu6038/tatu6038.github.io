@@ -59,37 +59,131 @@
 			</div>
 		</header>
         <style>
-            p.button {
-                font-size:xx-large;
-                position: -webkit-sticky;
+            .button {
+                font-size: 25px;
                 position: sticky;
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: row;
+				justify-content: flex-end;
                 top: 0;
-                line-height: 87px;
-                text-align: right;
+				left: 0;
+				margin: 0;
             }
-            p.button > span {
+            .button > span {
                 background-color: darkgray;
                 color: black;
-                padding: 20px 30px;
+				width: 70px;
+				height: 70px;
                 border-color: gray;
                 border-width: 3px;
                 border-style: solid;
+                text-align: center;
             }
-            p.button > span:hover {
+            .button > span:hover {
                 font-weight: bold;
             }
-            p.button > span:active {
+            .button > span:active {
                 color: cadetblue;
             }
+			.textareas {
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: row;
+			}
+			textarea {
+				resize: none;
+			}
+			.infos {
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: row;
+				justify-content: flex-end;
+			}
+			.infos > label {
+				width: 70px;
+				height: 70px;
+				text-align: center;
+                background-color: darkgray;
+                border-color: gray;
+                border-width: 3px;
+                border-style: solid;
+			}
+			.infos > label > span {
+                color: black;
+			}
         </style>
 		<div class="body">
             <h1>Buckshot Roulette(ローカル版)</h1>
-            <textarea name="" id="" placeholder="最大値を入れてボタンを押すと0からその数までの数字がランダムで出ます" cols="80" rows="1" readonly></textarea>
-            
-            <p class="button">
-                <span onclick="num('1')">1</span><span onclick="num('2')">2</span><span onclick="num('3')">3</span><span onclick="num('4')">4</span><span onclick="num('5')">5</span><span onclick="num('6')">6</span><span onclick="num('7')">7</span><span onclick="num('8')">8</span><br><span onclick="next()">NEXT</span><span onclick="newgame()">NEW GAME</span>
+			<h2>設定</h2>
+			<p>右側のテキスト入力欄に入力した内容が反映されます</p>
+			<p>総ラウンド数以外は0を入れると毎回ランダムで決まります</p>
+			<p>抽選ボタンを押すと「１～&lt;左側のテキスト入力欄に入力した数字N&gt;」がランダムで出ます</p>
+			<p>参考：本家は<br>装弾数ランダム(実弾空砲共に最大4)で<br>ラウンド数固定3で通常モードのとき
+				<ul>
+					<li><span>1ラウンド目は最大ライフ2、アイテムなし</span></li>
+					<li><span>2ラウンド目は最大ライフ4、ターン毎アイテム2</span></li>
+					<li><span>3ラウンド目は最大ライフ6、うち残り2以下になると即死かつ回復不可、ターン毎アイテム4</span></li>
+				</ul><span>ピル使用で毎ターンアイテム支給1~5ランダム、ライフ2~3ランダム</span>
+				<ul>
+					<li><span>新アイテム：携帯電話、期限切れ薬、アドレナリン、インバータ</span></li>
+					<li><span>1ラウンド目は最大ライフ2、ターン毎アイテム</span></li>
+				</ul>
+			</p>
+			<p class="textareas">
+				<label for=""><!-- 総ラウンド数 -->
+					<span class="big">総ラウンド数：</span>
+					<input type="text" id="totalRoundsInput" size="1">
+					<button onclick="randomNumTool('totalRoundsInput', 'totalRoundsResult')">抽選</button>
+					<input type="text" id="totalRoundsResult" size="1">
+				</label><span class="big">&ensp;/&ensp;</span>
+				<label for=""><!-- ラウンド当たりの支給アイテム数 -->
+					<span class="big">ラウンド当たりの支給アイテム数：</span>
+					<input type="text" id="itemsPerTurnInput" size="1">
+					<button onclick="randomNumTool('itemsPerTurnInput', 'itemsPerTurnResult')">抽選</button>
+					<input type="text" id="itemsPerTurnResult" size="1">
+				</label><span class="big">&ensp;/&ensp;</span>
+				<label for=""><!-- 装弾数 -->
+					<span class="big">装弾数：</span>
+					<input type="text" id="bulletsInput" size="1">
+					<button onclick="randomNumTool('bulletsInput', 'bulletsResult')">抽選</button>
+					<input type="text" id="bulletsResult" size="1">
+				</label><span class="big">&ensp;/&ensp;</span>
+				<label for=""><!-- 最大ライフ数 -->
+					<span class="big">最大ライフ数：</span>
+					<input type="text" id="maxLifesInput" size="1">
+					<button onclick="randomNumTool('maxLifesInput', 'maxLifesResult')">抽選</button>
+					<input type="text" id="maxLifesResult" size="1">
+				</label><span class="big">&ensp;/&ensp;</span>
+			</p>
+			<p class="button">
+                <span onclick="num('1')">1</span><span onclick="num('2')">2</span><span onclick="num('3')">3</span><span onclick="num('4')">4</span><span onclick="num('5')">5</span><span onclick="num('6')">6</span><span onclick="num('7')">7</span><span onclick="num('8')">8</span><span onclick="next()">NEXT</span><span onclick="newgame()">NEW GAME</span>
             </p>
-            <textarea name="" id="" cols="50" rows="20" readonly></textarea>
+			<div><p id="gameLogs">ゲームログ</p></div>
+			<label for=""><span>1P情報</span></label>
+            <div class="infos"><!-- 1p情報 -->
+				<label for=""><span>ライフ：</span><br><span id="current1pLifes">[]</span></label>
+				<label for=""><span>１：<br></span><span id="item1p1">[]</span></label>
+				<label for=""><span>２：<br></span><span id="item1p2">[]</span></label>
+				<label for=""><span>３：<br></span><span id="item1p3">[]</span></label>
+				<label for=""><span>４：<br></span><span id="item1p4">[]</span></label>
+				<label for=""><span>５：<br></span><span id="item1p5">[]</span></label>
+				<label for=""><span>６：<br></span><span id="item1p6">[]</span></label>
+				<label for=""><span>７：<br></span><span id="item1p7">[]</span></label>
+				<label for=""><span>８：<br></span><span id="item1p8">[]</span></label>
+			</div>
+			<label class="miniTitle"><span>2P情報</span></label>
+			<div class="infos"><!-- 2p情報 -->
+				<label for=""><span>ライフ：</span><br><span id="current2pLifes">[]</span></label>
+				<label for=""><span>１：<br></span><span id="item2p1">[]</span></label>
+				<label for=""><span>２：<br></span><span id="item2p2">[]</span></label>
+				<label for=""><span>３：<br></span><span id="item2p3">[]</span></label>
+				<label for=""><span>４：<br></span><span id="item2p4">[]</span></label>
+				<label for=""><span>５：<br></span><span id="item2p5">[]</span></label>
+				<label for=""><span>６：<br></span><span id="item2p6">[]</span></label>
+				<label for=""><span>７：<br></span><span id="item2p7">[]</span></label>
+				<label for=""><span>８：<br></span><span id="item2p8">[]</span></label>
+			</div>
         </div>
 		<footer>
 			<p>
