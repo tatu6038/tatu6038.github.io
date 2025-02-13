@@ -1,4 +1,8 @@
 # **tatu6038.github.io**
+20250213
+
+なんだこの怪文書
+```
 ## **まず**  
 基本ブログとか書いていく感じだからここに書く内容マジで無い  
 まぁせっかくだからなんか書く  
@@ -40,6 +44,7 @@
 |:---:|:---|:---|:---|:---|
 |内容|Windows10(64bit)|クソスぺ|3年DC|出すわけねーだろKS|
 |備考|-|ダルいから書きたくない|し っ て た|し っ て た|
+```
 ---  
 ## **利用しているWorkflows**
 [![pages-build-deployment](https://github.com/tatu6038/tatu6038.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/tatu6038/tatu6038.github.io/actions/workflows/pages/pages-build-deployment)
